@@ -1,3 +1,5 @@
+import java.math.BigInteger
+
 /**
   *
   * @author wang.baozhi 
@@ -5,10 +7,10 @@
   */
 object Test {
   def main(args: Array[String]) {
-    val speeds = Array.fill[Integer](2)(50)
-    System.out.println(speeds.length)
-    System.out.println(speeds.apply(0))
-    System.out.println(speeds.apply(1))
+    val a = BigInteger.valueOf(2147483647)
+    println(a)
 
+    val s=String.format("player_sdk_startplay aa=\"%s\"", "aa")
+    System.out.println(s)
   }
 }
