@@ -1,6 +1,8 @@
 package com.galaxy.flink.java.alg;
 
+import java.util.LinkedList;
 import java.util.Random;
+import java.util.TreeMap;
 
 /**
  * @author wang.baozhi
@@ -11,6 +13,13 @@ import java.util.Random;
  */
 public class BitTest {
     public static void main(String[] args){
+
+        TreeMap map=new TreeMap();
+        LinkedList[] adj=new LinkedList[5];
+        adj[0]=new LinkedList();
+        adj[1]=new LinkedList();
+
+
         int totalCount = 100; //待排序数的数量
         //java中int占4字节,一个字节包含8个bit,每一个bit可以代表一个数.计算初始化多少个int
         int len = (totalCount - 1)/32 +1;
@@ -22,7 +31,7 @@ public class BitTest {
         Random rand = new Random();
         for(int i=0;i<totalCount;i++){
             int randomInt=rand.nextInt(totalCount);
-            inputIntArray[i] = randomInt;
+            inputIntArray[i] = i;
         }
 
         //将数据以bit方式存入int数组
