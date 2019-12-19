@@ -8,9 +8,11 @@ import java.util.Arrays;
  */
 public class MainClass {
     public static void main(String[] args) {
-      //测试归并排序
-        int[] intArray=new int[]{3,2,4,1,5};
-        MergeSort.mergeSort(intArray,5);
+          int[] intArray=new int[]{3,2,4,1,5};
+  /*      MergeSort.mergeSort(intArray,5);
+          System.out.println(Arrays.toString(intArray));*/
+          Arrays.sort(intArray);
+         //Arrays.parallelSort(intArray);
         System.out.println(Arrays.toString(intArray));
     }
 }

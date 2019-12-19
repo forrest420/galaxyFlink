@@ -49,7 +49,7 @@ public class FlinkKafkaWindow {
     }
 
 
-    private static class KafkaSer implements KafkaSerializationSchema<String>  {
+    public static class KafkaSer implements KafkaSerializationSchema<String>  {
         private String topic;
         public KafkaSer(String topic){
             this.topic=topic;

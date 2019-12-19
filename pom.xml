@@ -85,6 +85,14 @@ under the License.
         </dependency>
         <!-- Table ecosystem end -->
 
+
+        <!--kafka to hdfs usage-->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-filesystem_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
 		<!-- Scala Library, provided by Flink as well. -->
 		<dependency>
 			<groupId>org.scala-lang</groupId>
@@ -153,6 +161,12 @@ under the License.
             <version>28.1-jre</version>
         </dependency>
 
+        <!-- 测试携程配置 -->
+        <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>1.1.0</version>
+        </dependency>
 	</dependencies>
 
 	<build>

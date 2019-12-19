@@ -53,6 +53,7 @@ public class KafkaValue implements MapFunction<String, String> {
             //value= String.format("playerSdkStartplay,mac=%s,appVer=%s,contentType=%s,errorCode=%s,result=%s,source=%s videoSid=\"%s\" %s000000",mac,app_ver,content_type,error_code,result,source,user_id,happen_time);
             //value= String.format("playerSdkStartplay,mac=%s,appVer=%s,contentType=%s,errorCode=%s,result=%s,source=%s videoSid=\"%s\",accountId=\"%s\",userId=\"%s\" %s000000",mac,app_ver,content_type,error_code,result,source,video_sid,account_id,user_id,happen_time);
             //value= String.format("playerSdkStartplay,appVer=%s,contentType=%s,errorCode=%s,result=%s,source=%s videoSid=\"%s\",accountId=\"%s\",userId=\"%s\"",app_ver,content_type,error_code,result,source,video_sid,account_id,user_id);
+          // System.out.println(value);
         }
         catch (Exception e) {
             e.printStackTrace();
