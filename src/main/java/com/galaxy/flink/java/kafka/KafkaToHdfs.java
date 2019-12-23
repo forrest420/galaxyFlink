@@ -22,15 +22,16 @@ public class KafkaToHdfs {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         //config checkpoint
         setCheckpoint(env);
+        //env.setStateBackend();
 
         //get sourceFunction
         SourceFunction<String> source=generateSourceFunction();
         //add sourceFunction
-        DataStream<String> dataStream = env.addSource(source);
+        DataStream<String> dataStream = env.addSource(source).name("kafka_source").uid("kafka_source_id");
 
 
         //add mapFunction
-        dataStream=dataStream.map(new KafkaValue());
+        dataStream=dataStream.map(new KafkaValue()).name("mapFunction").uid("mapFunctionUid");
 
         //add sink
         SinkFunction sink= generateSinkFunction();

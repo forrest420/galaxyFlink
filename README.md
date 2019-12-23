@@ -7,7 +7,8 @@
 
 
 
-
+##应用
+- 大屏幕实时展示kafka-flink-redis, com.galaxy.flink.java.useCase.dashboard.DashboardJob
 
 
 
@@ -15,3 +16,16 @@
 - How to build stateful streaming applications with Apache Flink
 
 https://www.infoworld.com/article/3293426/how-to-build-stateful-streaming-applications-with-apache-flink.html
+
+
+
+### 使用Lombok简化代码
+https://zhuanlan.zhihu.com/p/34077671
+  <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+        </dependency>
+        
+        
+        

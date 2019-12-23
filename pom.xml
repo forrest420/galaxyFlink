@@ -167,6 +167,29 @@ under the License.
             <artifactId>apollo-client</artifactId>
             <version>1.1.0</version>
         </dependency>
+
+
+
+
+        <!-- for dashboard 使用  -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.41</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.bahir</groupId>
+            <artifactId>flink-connector-redis_${scala.binary.version}</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+        <!-- 使用Lombok简化代码 https://zhuanlan.zhihu.com/p/34077671 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+        </dependency>
+
+
 	</dependencies>
 
 	<build>
